@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数独 - Sudoku</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--	<script src="js/num-test.js"></script>-->
+	<script src="js/controller.js"></script>
+	<script src="js/generate-board.js"></script>
+	<script src="js/display-board.js"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">数独 Sudoku</div>
+			<button id="resetBtn">新游戏</button>
+		</div>
+		<div>
+			<ul id="gameBoard">
+				<li class="gameRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox rightBox boxBg2"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox rightBox boxBg2"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox rightBox boxBg2"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+				<li class="gameRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+				<li class="gameRow lastRow">
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox boxBg2"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox"></span>
+					<span class="gameBox rightBox"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	newGame();
+</script>
